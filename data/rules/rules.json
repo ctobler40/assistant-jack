@@ -1,0 +1,20 @@
+[
+  {
+    "id": "icebreaker_01",
+    "enabled": true,
+    "match": { "type": "contains", "value": "what do you like doing in your free time", "caseSensitive": false },
+    "cooldownMs": 20000,
+    "actions": [
+      { "type": "open_url", "url": "https://example.com/icebreakers" }
+    ]
+  },
+  {
+    "id": "notes_01",
+    "enabled": true,
+    "match": { "type": "regex", "value": "(action items|next steps|follow up)", "flags": "i" },
+    "cooldownMs": 60000,
+    "actions": [
+      { "type": "create_notes_doc", "template": "meeting-notes", "outputDir": "C:/Users/cjtob/Documents/AssistantJackNotes" }
+    ]
+  }
+]
